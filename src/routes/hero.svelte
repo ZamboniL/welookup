@@ -2,11 +2,11 @@
   import Tag from '$lib/tag.svelte';
 </script>
 
-<main
+<div
   class="relative flex w-full flex-col items-center bg-[url('/hero-bg.png')] bg-cover pb-80 pt-16"
 >
   <img src="/grass-top.svg" alt="" class="absolute top-0 w-full" />
-  <Tag>Soluções criativas para todos!</Tag>
+  <Tag light><span slot="icon">👋</span>Soluções criativas para todos!</Tag>
   <h1 class="max-w-3xl pb-6 pt-8 text-center text-[56px] font-bold leading-[72px] text-white">
     Nossa missão é criar sites que ajudem você a conseguir mais clientes.
   </h1>
@@ -26,4 +26,4 @@
     </div>
   </div>
   <img src="/grass-bottom.svg" alt="" class="absolute -bottom-2 w-full" />
-</main>
+</div>
