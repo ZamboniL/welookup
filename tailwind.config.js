@@ -3,6 +3,9 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
+      maxWidth: {
+        '6xl': '1170px'
+      },
       colors: {
         primary: {
           200: '#EBE8FF',

@@ -5,7 +5,7 @@
 
 <div
   class={twMerge(
-    'flex w-fit items-center gap-2 rounded-full px-3 py-1 font-medium',
+    'flex w-fit items-center gap-2 rounded-full px-3 py-[5px]',
     light ? 'bg-primary-200/20' : 'bg-primary-200'
   )}
 >

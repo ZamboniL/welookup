@@ -1,11 +1,9 @@
 <script>
   import Tag from '$lib/tag.svelte';
+  import TearSection from '$lib/tear-section.svelte';
 </script>
 
-<div
-  class="relative flex w-full flex-col items-center bg-[url('/hero-bg.png')] bg-cover pb-80 pt-16"
->
-  <img src="/grass-top.svg" alt="" class="absolute top-0 w-full" />
+<TearSection bottom top class="flex flex-col items-center pb-80 pt-16">
   <Tag light><span slot="icon">👋</span>Soluções criativas para todos!</Tag>
   <h1 class="max-w-3xl pb-6 pt-8 text-center text-[56px] font-bold leading-[72px] text-white">
     Nossa missão é criar sites que ajudem você a conseguir mais clientes.
@@ -25,5 +23,4 @@
       <img src="/examples.png" alt="" class="col-span-2" />
     </div>
   </div>
-  <img src="/grass-bottom.svg" alt="" class="absolute -bottom-2 w-full" />
-</div>
+</TearSection>

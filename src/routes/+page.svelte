@@ -1,27 +1,22 @@
 <script>
-  import Button from '$lib/button.svelte';
-  import Input from '$lib/input.svelte';
   import Tag from '$lib/tag.svelte';
-  import Textarea from '$lib/textarea.svelte';
   import Card from './card.svelte';
-  import Header from './header.svelte';
   import Hero from './hero.svelte';
-  import ProjectCard from './project-card.svelte';
+  import ProjectCard from '../lib/project-card.svelte';
   import Step from './step.svelte';
 </script>
 
-<Header />
 
 <main>
   <Hero />
   <section class="m-auto flex max-w-6xl gap-8 pb-36 pt-52">
     <h2 class="max-w-52">As melhores empresas acreditam em nós</h2>
-    <ul class="w-full bg-gray-200">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+    <ul class="flex w-full items-center gap-12">
+      <li><img src="/partners/approve.png" alt="Approve" class="h-12" /></li>
+      <li><img src="/partners/okdok.png" alt="OKDOK" class="h-10" /></li>
+      <li><img src="/partners/nutty.png" alt="NUTTY BAVARIAN" class="h-10" /></li>
+      <li><img src="/partners/paiper.png" alt="Paiper" class="h-8" /></li>
+      <li><img src="/partners/contemplato.png" alt="Contemplato" class="h-8" /></li>
     </ul>
   </section>
   <section class="m-auto flex max-w-6xl flex-col items-center gap-6 pb-36">
@@ -101,9 +96,9 @@
     </h2>
     <p class="mb-6">Alguns dos nossos projetos mais recentes estão aqui.</p>
     <ul class="flex gap-8">
-      <li><ProjectCard /></li>
-      <li><ProjectCard /></li>
-      <li><ProjectCard /></li>
+      <li><ProjectCard title="Furia" tag="E-commerce" image="/projects/furia.png" /></li>
+      <li><ProjectCard title="Paiper" tag="Website" image="/projects/paiper.png" /></li>
+      <li><ProjectCard title="Contemplato" tag="Branding" image="/projects/contemplato.png" /></li>
       <li><ProjectCard /></li>
     </ul>
   </section>
@@ -141,7 +136,14 @@
       <img src="/radar-pc.svg" alt="" class="absolute bottom-56 right-[400px]" />
       <img src="/radar-text.svg" alt="" class="absolute bottom-0 left-96" />
       <img src="/radar-toggle.svg" alt="" class="absolute bottom-12 left-64" />
-      <img src="/logo-w.png" alt="" class="absolute bottom-0 translate-y-1/2" />
+      <img
+        src="/logo-w.png"
+        alt=""
+        width="60"
+        height="40"
+        class="absolute bottom-0 translate-y-1/2"
+        style="filter: drop-shadow(0px 4px 20px #9E88FD99);"
+      />
       <img src="/radar.svg" alt="" />
     </div>
   </section>
@@ -179,60 +181,5 @@
       Nosso principal foco é transformar a jornada do cliente e criar uma experiência de compra
       incrível.
     </h2>
-    <img src="/grass-bottom-dark.svg" alt="" class="absolute -bottom-1 left-0 w-full" />
-  </section>
-  <section class="bg-primary-700 py-36">
-    <div class="m-auto grid max-w-4xl grid-cols-2 gap-x-32 gap-y-6">
-      <div class="flex flex-col justify-between">
-        <div>
-          <span class="text-primary-300">ENTRE EM CONTATO!</span>
-          <h2 class="mb-28 text-4xl font-bold text-white">
-            Pronto para elevar o padrão do seu comércio digital?
-          </h2>
-        </div>
-        <ul>
-          <li class="pb-8">
-            <span class="text-sm text-primary-200">TELEFONE</span>
-            <p class="text-lg font-semibold text-white">+ 55 11 95922 7525</p>
-          </li>
-          <li class="pb-8">
-            <span class="text-sm text-primary-200">WHATSAPP</span>
-            <p class="text-lg font-semibold text-white">+ 55 11 95922 7525</p>
-          </li>
-          <li class="pb-8">
-            <span class="text-sm text-primary-200">E-MAIL</span>
-            <p class="text-lg font-semibold text-white">contato@welookup.com.br</p>
-          </li>
-        </ul>
-      </div>
-      <form class="flex flex-col gap-5">
-        <Input placeholder="Nome" />
-        <Input placeholder="Empresa" />
-        <Input placeholder="E-mail" />
-        <Input placeholder="Telefone" />
-        <Textarea placeholder="Mensagem" />
-      </form>
-      <div class="col-span-2 ml-auto">
-        <Button>Enviar</Button>
-      </div>
-    </div>
   </section>
 </main>
-<footer class="border-t border-primary-600 bg-primary-700 py-12">
-  <div class="m-auto flex max-w-4xl items-center justify-between text-sm text-primary-300">
-    <span class="text-sm">{new Date().getFullYear()} © WeLookUP</span>
-    <ul class="flex gap-8">
-      <li><a href="/#">Sobre Nós</a></li>
-      <li><a href="/#">Vagas</a></li>
-      <li><a href="/#">Política de Privacidade</a></li>
-    </ul>
-    <div class="flex gap-8">
-      <a href="/#">
-        <img src="/instagram.svg" alt="Instagram" />
-      </a>
-      <a href="/#">
-        <img src="/linkedin.svg" alt="LinkedIn" />
-      </a>
-    </div>
-  </div>
-</footer>
