@@ -5,7 +5,7 @@
 <TearSection
   bottom
   top
-  class="mb-20 flex flex-col items-center justify-center gap-12 py-16 md:mb-36 md:flex-row md:gap-32"
+  class="mb-20 flex flex-col items-center justify-center gap-12 py-16 lg:mb-36 lg:flex-row lg:gap-8 xl:gap-32"
 >
   <div class="flex items-center gap-4">
     <h2 class="text-6xl font-bold text-white">+50</h2>

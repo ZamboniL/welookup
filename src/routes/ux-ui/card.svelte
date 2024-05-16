@@ -10,8 +10,8 @@
 
 <div
   class={twMerge(
-    'flex flex-col items-center gap-4 px-4 md:px-0',
-    inversed ? 'md:flex-row-reverse' : 'md:flex-row'
+    'flex flex-col items-center gap-4 px-4 lg:px-0',
+    inversed ? 'lg:flex-row-reverse' : 'lg:flex-row'
   )}
 >
   <div class="flex flex-1 flex-col gap-6">
@@ -23,8 +23,8 @@
         />
       </svg>{tag}
     </Tag>
-    <h2 class="text-4xl font-bold text-primary-400 md:text-[40px] md:leading-[50px]">{title}</h2>
-    <p class="text-base text-[#808080] md:text-lg">
+    <h2 class="text-4xl font-bold text-primary-400 lg:text-[40px] lg:leading-[50px]">{title}</h2>
+    <p class="text-base text-[#808080] lg:text-lg">
       {description}
     </p>
   </div>

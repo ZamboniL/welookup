@@ -69,7 +69,7 @@
   </section>
   <Deliveries />
   <section
-    class="m-auto flex max-w-6xl flex-col items-center gap-6 overflow-x-clip px-4 pb-20 md:overflow-x-visible md:px-0 md:pb-36"
+    class="m-auto flex max-w-6xl flex-col items-center gap-6 overflow-x-clip px-4 pb-20 xl:overflow-x-visible md:px-0 md:pb-36"
   >
     <Tag>
       <svg width="17" height="17" viewBox="0 0 17 17" slot="icon">

@@ -6,9 +6,9 @@
 <TearSection
   bottom
   top
-  class="flex grid-cols-[400px_670px] flex-col items-start justify-center gap-6 pt-16 md:grid md:gap-24 md:pb-24"
+  class="flex grid-cols-[400px_670px] flex-col items-start justify-center gap-6 pt-16 xl:grid xl:gap-24 xl:pb-24"
 >
-  <div class="order-4 -mb-20 flex flex-col gap-6 px-4 md:flex-row md:px-0">
+  <div class="order-4 xl:order-[unset] -mb-20 flex flex-col gap-6 px-4 xl:flex-row xl:px-0">
     <div class="grid grid-cols-[1fr_72px] gap-6">
       <div
         class="flex items-center gap-9 overflow-hidden text-nowrap
@@ -42,10 +42,10 @@
     <img
       src="/ux-ui/hero.png"
       alt=""
-      class="-bottom-12 z-10 h-96 w-full rounded-2xl object-cover md:absolute md:w-[400px]"
+      class="-bottom-12 z-10 h-96 w-full rounded-2xl object-cover xl:absolute xl:w-[400px]"
     />
   </div>
-  <div class="px-4 md:px-0">
+  <div class="px-4 xl:px-0">
     <Tag light>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -67,11 +67,11 @@
       </svg>UX/UI Design
     </Tag>
     <h1
-      class="max-w-3xl pb-6 pt-8 text-[40px] font-bold leading-[51px] text-white md:text-[56px] md:leading-[72px]"
+      class="max-w-3xl pb-6 pt-8 text-[40px] font-bold leading-[51px] text-white xl:text-[56px] xl:leading-[72px]"
     >
       Transformar a jornada do seu cliente é nosso principal foco.
     </h1>
-    <p class="text-base text-white md:text-lg">
+    <p class="text-base text-white xl:text-lg">
       Levar a melhor experiência de navegação para seus clientes, desenvolver soluções eficientes e
       criar uma experiência incrível é a nossa missão.
     </p>
