@@ -79,7 +79,7 @@
   </section>
   <Projects />
   <section
-    class="mb-12 hidden border-b border-b-primary-600 md:block"
+    class="mb-12 overflow-x-clip border-b border-b-primary-600 md:block"
     style="background: linear-gradient(180deg, #FFFFFF 11.55%, #7F58FA 100%);"
   >
     <div class="relative m-auto flex max-w-6xl flex-col items-center gap-6">
@@ -101,7 +101,7 @@
       <h2 class="max-w-4xl text-center text-4xl font-bold text-primary-400">
         Entenda nosso passo a passo para transformar a sua marca!
       </h2>
-      <p class="mb-20 text-primary-600">
+      <p class="mb-20 text-primary-600 text-center">
         Trazemos mais performance, usabilidade e conversão de vendas para seus negócios.
       </p>
       <img src="/radar-bag.svg" alt="" class="absolute bottom-72 left-[480px]" />
@@ -120,7 +120,7 @@
         class="absolute bottom-0 translate-y-1/2"
         style="filter: drop-shadow(0px 4px 20px #9E88FD99);"
       />
-      <img src="/radar.svg" alt="" />
+      <img src="/radar.svg" alt="" class="max-w-none" />
     </div>
   </section>
   <section class="px-4 pb-20 md:px-0 md:pb-11">

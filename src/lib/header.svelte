@@ -54,7 +54,7 @@
     </HeaderButton>
   </nav>
   {#if open}
-    <div class="min-h-screen border-t border-zinc-200 p-4">
+    <div class="min-h-screen border-t border-zinc-200 p-4 md:hidden">
       <ul class="mb-8 flex flex-col gap-8 border-b border-zinc-200 pb-8 text-sm text-primary-600">
         <li><a href="/" on:click={closeMenu}>Home</a></li>
         <li>
