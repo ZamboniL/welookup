@@ -9,14 +9,14 @@
     Nossa missão é criar sites que ajudem você a conseguir mais clientes.
   </h1>
   <p class="text-lg text-white">Mas fazemos as coisas de maneira um pouco diferente por aqui.</p>
-  <div class="absolute -bottom-24 z-10 flex gap-4">
-    <div class="flex flex-col gap-4">
+  <div class="-bottom-24 z-10 flex flex-col gap-3 md:absolute md:flex-row md:gap-4 overflow-hidden">
+    <div class="flex flex-col gap-3 md:gap-4">
       <img src="/tags.png" alt="" />
       <img src="/years.png" alt="" />
     </div>
     <img src="/teams.png" alt="" class="row-span-2" />
-    <div class="flex flex-col gap-4">
-      <div class="flex gap-4">
+    <div class="flex flex-col gap-3 md:gap-4">
+      <div class="flex gap-3 md:gap-4">
         <img src="/code.png" alt="" />
         <img src="/projects.png" alt="" />
       </div>

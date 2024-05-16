@@ -4,7 +4,7 @@
 
 <nav class="m-auto flex max-w-6xl items-center justify-between py-6">
   <img src="/logo.png" alt="" />
-  <ul class="flex gap-8 text-sm text-primary-600">
+  <ul class="hidden gap-8 text-sm text-primary-600 md:flex">
     <li><a href="/">Home</a></li>
     <li><a href="/#solucoes">Soluções</a></li>
     <li><a href="/#projetos">Projetos</a></li>

@@ -1,6 +1,17 @@
+<script lang="ts">
+  import { twMerge } from 'tailwind-merge';
+
+  let c = '';
+
+  export { c as class };
+</script>
+
 <button
   on:click
-  class="min-w-36 rounded-lg bg-[linear-gradient(94deg,_#6a30f1_3.5%,_#7f58fa_100%)] px-6 py-3 font-semibold text-white"
+  class={twMerge(
+    c,
+    'min-w-36 rounded-lg bg-[linear-gradient(94deg,_#6a30f1_3.5%,_#7f58fa_100%)] px-6 py-3 font-semibold text-white'
+  )}
 >
   <slot />
 </button>

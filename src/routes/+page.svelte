@@ -4,6 +4,7 @@
   import Hero from './hero.svelte';
   import ProjectCard from '../lib/project-card.svelte';
   import Step from './step.svelte';
+    import Projects from '$lib/projects.svelte';
 </script>
 
 
@@ -19,7 +20,7 @@
       <li><img src="/partners/contemplato.png" alt="Contemplato" class="h-8" /></li>
     </ul>
   </section>
-  <section class="m-auto flex max-w-6xl flex-col items-center gap-6 pb-36">
+  <section class="m-auto flex max-w-6xl flex-col items-center gap-6 pb-36 overflow-clip">
     <Tag>
       <svg width="17" height="17" viewBox="0 0 17 17" slot="icon">
         <path
@@ -75,35 +76,9 @@
       </li>
     </ul>
   </section>
-  <section class="m-auto flex max-w-6xl flex-col items-center gap-6 pb-36">
-    <Tag>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="15"
-        height="15"
-        viewBox="0 0 15 15"
-        slot="icon"
-      >
-        <path
-          d="M6.29638 11.0739C6.26896 11.1829 5.58341 13.75 1.81255 13.75C1.66337 13.75 1.5203 13.6907 1.41481 13.5852C1.30932 13.4797 1.25005 13.3367 1.25005 13.1875C1.25005 9.41661 3.81716 8.73106 3.92615 8.70364C4.07095 8.66747 4.22419 8.69029 4.35216 8.7671C4.48014 8.84391 4.57235 8.96841 4.60853 9.11321C4.64471 9.25802 4.62188 9.41126 4.54507 9.53923C4.46826 9.6672 4.34376 9.75942 4.19896 9.7956C4.13568 9.81317 2.62255 10.2554 2.40177 12.5983C4.74459 12.3775 5.18755 10.8672 5.20583 10.7968C5.24313 10.6522 5.33635 10.5284 5.46498 10.4525C5.59361 10.3766 5.74712 10.3549 5.89173 10.3922C6.03635 10.4295 6.16023 10.5227 6.23611 10.6513C6.312 10.78 6.33368 10.9335 6.29638 11.0781V11.0739ZM12.8354 6.33482L12.5001 6.67021V10.7715C12.5009 10.9198 12.4722 11.0668 12.4157 11.204C12.3592 11.3411 12.276 11.4656 12.171 11.5703L9.75787 13.982C9.6538 14.0868 9.53002 14.17 9.39365 14.2267C9.25728 14.2834 9.11103 14.3126 8.96334 14.3125C8.84144 14.3124 8.72035 14.2927 8.60474 14.2541C8.40624 14.1885 8.23007 14.0686 8.09612 13.9081C7.96218 13.7475 7.87581 13.5527 7.84677 13.3457L7.46919 10.6393L4.36068 7.53083L1.65576 7.15325C1.44844 7.12417 1.25334 7.03783 1.09242 6.90392C0.931495 6.77001 0.811129 6.59385 0.744861 6.39527C0.678593 6.19668 0.669051 5.98354 0.717309 5.77983C0.765566 5.57612 0.86971 5.38991 1.01802 5.24216L3.42974 2.82903C3.53442 2.72398 3.65895 2.64078 3.79607 2.58429C3.9332 2.5278 4.08019 2.49914 4.22849 2.49997H8.32982L8.66521 2.16458C10.5411 0.289347 12.8017 0.208487 13.6862 0.261222C13.9605 0.277889 14.2192 0.394359 14.4135 0.588655C14.6078 0.782951 14.7242 1.04164 14.7409 1.31591C14.7922 2.19833 14.7114 4.45888 12.8361 6.33482H12.8354ZM1.81255 6.0395L4.42466 6.40372L7.20482 3.62497H4.22849L1.81255 6.0395ZM5.42099 6.99997L8.00005 9.57903L12.0395 5.53958C12.5839 4.99888 13.0062 4.34791 13.2781 3.63043C13.55 2.91295 13.6652 2.14558 13.6159 1.37989C12.8506 1.33239 12.084 1.44875 11.3673 1.72121C10.6506 1.99366 10.0002 2.41594 9.45974 2.95982L5.42099 6.99997ZM11.3751 7.79521L8.5956 10.5747L8.96123 13.1875L11.3751 10.7715V7.79521Z"
-          fill="#6A30F1"
-        />
-      </svg>
-      Projetos
-    </Tag>
-    <h2 class="text-4xl font-bold text-primary-400">
-      Trazendo resultados estelares para cada cliente.
-    </h2>
-    <p class="mb-6">Alguns dos nossos projetos mais recentes estão aqui.</p>
-    <ul class="flex gap-8">
-      <li><ProjectCard title="Furia" tag="E-commerce" image="/projects/furia.png" /></li>
-      <li><ProjectCard title="Paiper" tag="Website" image="/projects/paiper.png" /></li>
-      <li><ProjectCard title="Contemplato" tag="Branding" image="/projects/contemplato.png" /></li>
-      <li><ProjectCard /></li>
-    </ul>
-  </section>
+  <Projects />
   <section
-    class="mb-12 border-b border-b-primary-600"
+    class="mb-12 border-b border-b-primary-600 md:block hidden"
     style="background: linear-gradient(180deg, #FFFFFF 11.55%, #7F58FA 100%);"
   >
     <div class="relative m-auto flex max-w-6xl flex-col items-center gap-6">
@@ -148,7 +123,7 @@
     </div>
   </section>
   <section class="pb-11">
-    <ol class="m-auto flex w-fit gap-16">
+    <ol class="m-auto flex w-fit gap-16 md:flex-row flex-col">
       <Step
         step={1}
         title="Análise"

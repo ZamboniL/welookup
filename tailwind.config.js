@@ -4,15 +4,16 @@ export default {
   theme: {
     extend: {
       maxWidth: {
+        '5xl': '970px',
         '6xl': '1170px'
       },
       colors: {
         primary: {
           200: '#EBE8FF',
-          300: '#9E88FD',
+          300: '#8B83BE',
           400: '#6A30F1',
           500: '#5F24DD',
-          600: '#270E67',
+          600: '#271657',
           700: '#19054F'
         }
       }
