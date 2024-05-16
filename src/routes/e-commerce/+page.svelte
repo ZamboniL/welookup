@@ -10,7 +10,9 @@
 
 <main>
   <Hero />
-  <section class="m-auto flex max-w-6xl flex-col items-center gap-6 pb-36 pt-24">
+  <section
+    class="m-auto flex max-w-6xl flex-col items-center gap-6 px-4 pb-20 pt-40 lg:pt-24 lg:px-0 lg:pb-36"
+  >
     <Tag>
       <svg width="17" height="17" viewBox="0 0 17 17" slot="icon">
         <path
@@ -24,11 +26,13 @@
       Uma boa ideia não é nada sem uma excelente <p>execução.</p>
     </h2>
     <p class="mb-6 text-[#808080]">O que o seu negócio precisa?</p>
-    <ul class="flex gap-8">
+    <ul class="flex flex-col gap-6 lg:flex-row lg:flex-wrap lg:justify-center xl:flex-nowrap lg:gap-8">
       <li>
         <Card title="Implantação" src="/e-commerce/implementation.png" />
       </li>
-      <li class="mt-10"><Card title="Migração" src="/e-commerce/migration.png" /></li>
+      <li class="lg:mt-10">
+        <Card title="Migração" src="/e-commerce/migration.png" />
+      </li>
       <li>
         <Card title="Evolução" src="/e-commerce/evolution.png" />
       </li>
@@ -36,7 +40,7 @@
   </section>
   <Deliveries />
   <Projects />
-  <section class="m-auto flex max-w-6xl flex-col items-center gap-6 pb-36">
+  <section class="m-auto flex max-w-6xl flex-col items-center gap-6 px-4 pb-20 lg:px-0 lg:pb-36">
     <Tag>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -61,11 +65,15 @@
     <h2 class="text-center text-4xl font-bold text-primary-400">
       Utilizamos as principais plataformas do mercado <p>em nosso trabalho!</p>
     </h2>
-    <ul class="grid grid-cols-4">
-      <Rectangle src="/partners/vtex.png" alt="vtex" class="rounded-l-2xl" />
-      <Rectangle src="/partners/tray.png" alt="tray" />
-      <Rectangle src="/partners/wake.png" alt="wake" />
-      <Rectangle src="/partners/shopify.png" alt="shopify" class="rounded-r-2xl" />
+    <ul class="grid grid-cols-[repeat(2,_178px)] xl:grid-cols-[repeat(4,_293px)]">
+      <Rectangle src="/partners/vtex.png" alt="vtex" class="rounded-tl-2xl xl:rounded-l-2xl" />
+      <Rectangle src="/partners/tray.png" alt="tray" class="rounded-tr-2xl xl:rounded-none" />
+      <Rectangle src="/partners/wake.png" alt="wake" class="rounded-bl-2xl xl:rounded-none" />
+      <Rectangle
+        src="/partners/shopify.png"
+        alt="shopify"
+        class="rounded-br-2xl xl:rounded-r-2xl"
+      />
     </ul>
   </section>
   <HowItWorks />

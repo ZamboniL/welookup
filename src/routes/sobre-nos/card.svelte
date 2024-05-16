@@ -10,7 +10,7 @@
 
 <div
   class={twMerge(
-    'flex h-52 flex-1 flex-col gap-6 rounded-2xl p-8',
+    'flex min-h-52 flex-1 flex-col gap-6 rounded-2xl p-8',
     light
       ? 'bg-primary-400 bg-[url("/card-bg-light.png")]'
       : 'bg-primary-600 bg-[url("/card-bg-dark.png")]'

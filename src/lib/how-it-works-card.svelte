@@ -10,7 +10,7 @@
     border-image-source: linear-gradient(110.21deg, rgba(255, 255, 255, 0.7) 2.78%, rgba(255, 250, 203, 0.534754) 58.48%, rgba(255, 57, 57, 0.07) 72.66%, rgba(255, 255, 255, 0.595) 100%);
     "
 >
-  <h3 class="text-[36px] font-bold text-white">{title}</h3>
+  <h3 class="text-xl font-bold text-white md:text-4xl">{title}</h3>
   <p class="text-sm text-white">
     <slot />
   </p>

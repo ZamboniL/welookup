@@ -8,7 +8,7 @@
 
 <main>
   <Hero />
-  <section class="m-auto flex max-w-6xl flex-col gap-6 pb-36 pt-52">
+  <section class="m-auto flex max-w-6xl flex-col gap-6 px-4 pb-20 pt-52 md:px-0 md:pb-36">
     <Tag>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -30,16 +30,16 @@
       </svg>
       Nossa cultura
     </Tag>
-    <div class="grid grid-cols-2 items-end gap-10 pb-6">
-      <h2 class="w-[570px] text-[40px] font-bold leading-[51px] text-primary-400">
+    <div class="flex grid-cols-2 flex-col gap-6 pb-6 md:grid md:items-end md:gap-10">
+      <h2 class="text-4xl font-bold leading-[51px] text-primary-400 md:w-[570px] md:text-[40px]">
         Nós somos a WeLookUp, a sua agência digital.
       </h2>
-      <p class="text-lg text-[#808080]">
+      <p class="text-base text-[#808080] md:text-lg">
         Desde 2020 nossa equipe atua no mercado digital, desenvolvendo as melhores soluções em alta
         performance para diferentes nichos de mercado.
       </p>
     </div>
-    <ul class="grid grid-cols-3 gap-8">
+    <ul class="flex grid-cols-3 flex-col gap-5 md:grid md:gap-8">
       <li>
         <Card
           light
@@ -68,7 +68,9 @@
     </ul>
   </section>
   <Deliveries />
-  <section class="m-auto flex max-w-6xl flex-col items-center gap-6 pb-36">
+  <section
+    class="m-auto flex max-w-6xl flex-col items-center gap-6 overflow-x-clip px-4 pb-20 md:overflow-x-visible md:px-0 md:pb-36"
+  >
     <Tag>
       <svg width="17" height="17" viewBox="0 0 17 17" slot="icon">
         <path
@@ -78,9 +80,13 @@
       </svg>
       Empresas
     </Tag>
-    <h2 class="text-4xl font-bold text-primary-400">Clientes que fazem parte da nossa história.</h2>
-    <p class="mb-6">Veja aqui alguns dos nossos parceiros que acreditaram na gente!</p>
-    <ul class="grid grid-cols-4">
+    <h2 class="text-center text-4xl font-bold text-primary-400">
+      Clientes que fazem parte da nossa história.
+    </h2>
+    <p class="mb-6 text-center text-gray-400">
+      Veja aqui alguns dos nossos parceiros que acreditaram na gente!
+    </p>
+    <ul class="grid grid-cols-[repeat(4,_293px)]">
       <Rectangle src="/partners/guardaroba.png" alt="guardaroba" class="rounded-tl-2xl" />
       <Rectangle src="/partners/approve.png" alt="approve" />
       <Rectangle src="/partners/jadejade.png" alt="jadejade" />

@@ -10,7 +10,7 @@
 
 <li
   class={twMerge(
-    'flex h-[162px] w-[293px] items-center justify-center border border-[#D9D5FF] p-16',
+    'flex h-[162px] w-full shrink-0 resize-none items-center justify-center border border-[#D9D5FF] p-16',
     className
   )}
 >

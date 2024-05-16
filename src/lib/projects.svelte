@@ -3,7 +3,7 @@
   import Tag from './tag.svelte';
 </script>
 
-<section class="m-auto flex max-w-6xl flex-col gap-6 px-4 pb-36 md:px-0">
+<section class="m-auto flex max-w-6xl flex-col gap-6 px-4 pb-20 md:px-0 md:pb-36">
   <Tag>
     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" slot="icon">
       <path

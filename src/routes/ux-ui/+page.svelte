@@ -1,6 +1,6 @@
 <script lang="ts">
   import Deliveries from '$lib/deliveries.svelte';
-    import HowItWorks from '$lib/how-it-works.svelte';
+  import HowItWorks from '$lib/how-it-works.svelte';
   import Projects from '$lib/projects.svelte';
   import Card from './card.svelte';
   import Hero from './hero.svelte';
@@ -8,8 +8,8 @@
 
 <main>
   <Hero />
-  <section class="m-auto flex max-w-6xl flex-col gap-6 pb-36 pt-52">
-    <ul class="flex flex-col gap-28">
+  <section class="m-auto flex max-w-6xl flex-col gap-6 pb-20 pt-52 md:pb-36">
+    <ul class="flex flex-col gap-20 md:gap-28">
       <li>
         <Card
           src="/ux-ui/card.png"

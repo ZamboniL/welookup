@@ -1,8 +1,8 @@
 <script>
   import { twMerge } from 'tailwind-merge';
   import HeaderButton from './header-button.svelte';
-  let open = true;
-  let solutions = true;
+  let open = false;
+  let solutions = false;
 
   function closeMenu() {
     open = false;
@@ -13,7 +13,7 @@
   <nav class="m-auto flex max-w-6xl items-center justify-between px-4 py-6 md:px-0">
     <img src="/logo.png" alt="" />
     <ul class="hidden gap-8 text-sm text-primary-600 md:flex">
-      <li><a href="/">Home</a></li>
+      <li class="hidden lg:block"><a href="/">Home</a></li>
       <li><a href="/#solucoes">Soluções </a></li>
       <li><a href="/#projetos">Projetos</a></li>
       <li><a href="/#como-fazemos">Como fazemos</a></li>

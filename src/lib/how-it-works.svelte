@@ -4,8 +4,8 @@
   import HowItWorksCard from './how-it-works-card.svelte';
 </script>
 
-<TearSection top class="py-36">
-  <div class="m-auto grid max-w-6xl grid-cols-2 gap-8">
+<TearSection top class="py-20 md:py-36">
+  <div class="m-auto flex max-w-6xl grid-cols-2 flex-col gap-8 px-4 md:grid xl:px-0">
     <div class="flex flex-col gap-8 text-white">
       <Tag light>
         <svg
@@ -26,15 +26,15 @@
             fill="white"
           />
         </svg>
-        Como funciona?</Tag
-      >
+        Como funciona?
+      </Tag>
       <h2 class="text-4xl font-bold">Entenda como trilhamos o seu caminho para o sucesso.</h2>
       <p class="mb-6">
         Com nossa ampla expertise, podemos garantir o sucesso do seu negócio. Descubra como podemos
         auxiliá-lo nessa jornada maravilhosa.
       </p>
     </div>
-    <div class="flex flex-col gap-8">
+    <div class="flex flex-col gap-6 md:gap-8">
       <HowItWorksCard title="01 - Onboarding">
         <p>
           Este é o momento onde nos reunimos e mergulharmos em uma conversa profunda sobre o seu
