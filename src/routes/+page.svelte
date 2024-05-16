@@ -9,17 +9,19 @@
 
 <main>
   <Hero />
-  <section class="m-auto flex max-w-6xl gap-8 pb-36 pt-52">
-    <h2 class="max-w-52">As melhores empresas acreditam em nós</h2>
-    <ul class="flex w-full items-center gap-12">
-      <li><img src="/partners/approve.png" alt="Approve" class="h-12" /></li>
-      <li><img src="/partners/okdok.png" alt="OKDOK" class="h-10" /></li>
-      <li><img src="/partners/nutty.png" alt="NUTTY BAVARIAN" class="h-10" /></li>
-      <li><img src="/partners/paiper.png" alt="Paiper" class="h-8" /></li>
-      <li><img src="/partners/contemplato.png" alt="Contemplato" class="h-8" /></li>
+  <section class="m-auto flex max-w-6xl gap-8 px-4 pb-20 pt-52 md:px-0 md:pb-36">
+    <h2 class="max-w-52 text-gray-400">As melhores empresas acreditam em nós</h2>
+    <ul class="flex w-full items-center gap-12 overflow-clip">
+      <li><img src="/partners/approve.png" alt="Approve" class="h-12 max-w-none" /></li>
+      <li><img src="/partners/okdok.png" alt="OKDOK" class="h-10 max-w-none" /></li>
+      <li><img src="/partners/nutty.png" alt="NUTTY BAVARIAN" class="h-10 max-w-none" /></li>
+      <li><img src="/partners/paiper.png" alt="Paiper" class="h-8 max-w-none" /></li>
+      <li><img src="/partners/contemplato.png" alt="Contemplato" class="h-8 max-w-none" /></li>
     </ul>
   </section>
-  <section class="m-auto flex max-w-6xl flex-col items-center gap-6 overflow-clip pb-36">
+  <section
+    class="m-auto flex max-w-6xl flex-col items-center gap-6 overflow-clip px-4 pb-20 md:px-0 md:pb-36"
+  >
     <Tag>
       <svg width="17" height="17" viewBox="0 0 17 17" slot="icon">
         <path
@@ -29,11 +31,11 @@
       </svg>
       Soluções
     </Tag>
-    <h2 class="text-4xl font-bold text-primary-400">
+    <h2 class="text-center text-4xl font-bold text-primary-400">
       Soluções poderosas para o seu sucesso digital!
     </h2>
-    <p class="mb-6">Somos especialistas em transformação digital.</p>
-    <ul class="grid grid-cols-2 grid-rows-2 gap-8">
+    <p class="mb-6 text-center text-gray-400">Somos especialistas em transformação digital.</p>
+    <ul class="flex grid-cols-2 grid-rows-2 flex-col gap-6 md:grid">
       <li>
         <Card
           light
@@ -53,7 +55,7 @@
           eficientes e inovadoras, sempre buscando criar uma experiência extraordinária para eles."
         />
       </li>
-      <li>
+      <li class="order-4 md:order-[unset]">
         <Card
           icon="/wish.svg"
           title="Suporte & Evolução"
