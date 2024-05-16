@@ -12,6 +12,7 @@ export default {
           400: '#808080'
         },
         primary: {
+          100: '#F4F3FF',
           200: '#EBE8FF',
           300: '#8B83BE',
           400: '#6A30F1',
