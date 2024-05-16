@@ -3,7 +3,7 @@
   import Tag from './tag.svelte';
 </script>
 
-<section class="m-auto flex max-w-6xl flex-col items-center gap-6 pb-36">
+<section class="m-auto flex max-w-6xl flex-col gap-6 px-4 pb-36 md:px-0">
   <Tag>
     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" slot="icon">
       <path
@@ -16,8 +16,8 @@
   <h2 class="text-4xl font-bold text-primary-400">
     Trazendo resultados estelares para cada cliente.
   </h2>
-  <p class="mb-6">Alguns dos nossos projetos mais recentes estão aqui.</p>
-  <ul class="flex gap-8 overflow-clip max-w-full">
+  <p class="mb-6 text-gray-400">Alguns dos nossos projetos mais recentes estão aqui.</p>
+  <ul class="flex max-w-full gap-8 overflow-clip">
     <li><ProjectCard title="Furia" tag="E-commerce" image="/projects/furia.png" /></li>
     <li><ProjectCard title="Paiper" tag="Website" image="/projects/paiper.png" /></li>
     <li><ProjectCard title="Contemplato" tag="Branding" image="/projects/contemplato.png" /></li>

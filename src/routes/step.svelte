@@ -57,7 +57,7 @@
   ];
 </script>
 
-<li class="flex max-w-72 flex-col items-center gap-4">
+<li class="flex md:max-w-72 flex-col items-center gap-4">
   <div class="flex w-fit items-center gap-2 rounded-full border border-gray-400 py-1 pl-1 pr-4">
     <div class="flex w-fit items-center justify-center rounded-full bg-primary-500 p-2">
       {@html svgList[step - 1]}
@@ -65,7 +65,7 @@
     <span class="text-primary-500">Etapa {step}</span>
   </div>
   <h3 class="text-xl font-bold text-primary-400">{title}</h3>
-  <p class="text-center text-gray-600">
+  <p class="text-center text-gray-400">
     {description}
   </p>
 </li>

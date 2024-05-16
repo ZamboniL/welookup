@@ -4,9 +4,8 @@
   import Hero from './hero.svelte';
   import ProjectCard from '../lib/project-card.svelte';
   import Step from './step.svelte';
-    import Projects from '$lib/projects.svelte';
+  import Projects from '$lib/projects.svelte';
 </script>
-
 
 <main>
   <Hero />
@@ -20,7 +19,7 @@
       <li><img src="/partners/contemplato.png" alt="Contemplato" class="h-8" /></li>
     </ul>
   </section>
-  <section class="m-auto flex max-w-6xl flex-col items-center gap-6 pb-36 overflow-clip">
+  <section class="m-auto flex max-w-6xl flex-col items-center gap-6 overflow-clip pb-36">
     <Tag>
       <svg width="17" height="17" viewBox="0 0 17 17" slot="icon">
         <path
@@ -78,7 +77,7 @@
   </section>
   <Projects />
   <section
-    class="mb-12 border-b border-b-primary-600 md:block hidden"
+    class="mb-12 hidden border-b border-b-primary-600 md:block"
     style="background: linear-gradient(180deg, #FFFFFF 11.55%, #7F58FA 100%);"
   >
     <div class="relative m-auto flex max-w-6xl flex-col items-center gap-6">
@@ -122,8 +121,8 @@
       <img src="/radar.svg" alt="" />
     </div>
   </section>
-  <section class="pb-11">
-    <ol class="m-auto flex w-fit gap-16 md:flex-row flex-col">
+  <section class="px-4 pb-20 md:px-0 md:pb-11">
+    <ol class="m-auto flex w-fit flex-col gap-8 md:flex-row md:gap-16">
       <Step
         step={1}
         title="Análise"
@@ -150,10 +149,10 @@
       />
     </ol>
   </section>
-  <section class="relative w-full bg-[url('/hero-bg.png')] bg-cover p-16">
-    <img src="/grass-top.svg" alt="" class="absolute left-0 top-0 w-full" />
-    <h2 class="m-auto max-w-6xl text-center text-4xl font-bold text-white">
-      Nosso principal foco é transformar a jornada do cliente e criar uma experiência de compra
+  <section class="relative w-full overflow-x-clip bg-[url('/hero-bg.png')] bg-cover py-12 md:py-16">
+    <img src="/grass-top.svg" alt="" class="absolute left-0 top-0 min-w-full max-w-none" />
+    <h2 class="m-auto max-w-5xl text-center text-[32px] font-bold leading-10 text-white">
+      Nosso principal foco é transformar a jornada do seu cliente e criar uma experiência digital
       incrível.
     </h2>
   </section>

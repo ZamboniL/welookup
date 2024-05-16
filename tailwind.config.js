@@ -8,6 +8,9 @@ export default {
         '6xl': '1170px'
       },
       colors: {
+        gray: {
+          400: '#808080'
+        },
         primary: {
           200: '#EBE8FF',
           300: '#8B83BE',

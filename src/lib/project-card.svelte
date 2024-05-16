@@ -4,7 +4,7 @@
   export let tag = 'E-commerce';
 </script>
 
-<div class="flex w-[370px] flex-col">
+<div class="flex w-[277px] md:w-[370px] flex-col">
   <img src={image} alt="" class="mb-6 rounded-2xl" />
   <div class="flex flex-col gap-3">
     <span class="text-xs text-primary-400">{tag}</span>
